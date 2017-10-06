@@ -1,0 +1,54 @@
+<html>
+    <head>
+      <title>Friends</title>
+      <style>
+          table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 50%;
+            margin-left: 250px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+        
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        form{
+            width: 200px;
+        }
+      </style>
+    </head>
+    <body>
+    <h2>Friends:</h2>
+     <table>
+         <tr>
+            <th>Name</th>           
+            <th>Age</th> 
+            <th>Friend Since</th> 
+         </tr>
+         <tr>
+             <td>jim jim</td>
+             <td>22</td>
+             <td>1998</td>
+         </tr>
+          
+     </table>
+     <h2>Add a Friend:</h2>
+       
+
+      <form action='/friends' method='POST'>
+        Name:<input type="text" name="first_name" id="first_name"><br><br>
+        Age:<input type="text" name="last_name" id="last_name">
+        <input type="submit" value="Submit">
+      </form> 
+
+    </body>
+    </html>
+    

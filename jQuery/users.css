@@ -1,0 +1,25 @@
+*{
+
+    margin:0px;
+}
+
+table {
+
+  
+ 
+    
+    margin-top: 15px;
+    outline-style: solid;
+    width:500px;
+    margin-bottom: 40px;
+}
+
+
+
+h1{
+
+    border-bottom: grey;
+    border-bottom-style: solid;
+    width: 300px;
+    margin-bottom: 20px;
+}

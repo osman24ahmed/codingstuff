@@ -1,0 +1,22 @@
+ahmeds-MacBook-Pro:dojoassignments Ahmed$ ls -R
+Ios		Python		WebFundamentals
+Mean		Ruby		netCore
+
+./Ios:
+about.txt
+
+./Mean:
+about.txt
+
+./Python:
+about.txt
+
+./Ruby:
+about.txt
+
+./WebFundamentals:
+about.txt
+
+./netCore:
+about.txt
+ahmeds-MacBook-Pro:dojoassignments Ahmed$ 

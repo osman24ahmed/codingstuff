@@ -1,0 +1,35 @@
+<!doctype html>
+<head>
+    <meta charset='UTF-8'>
+    
+    <title>Dojo Survey</title>
+    <style>
+        table{
+            width: 300px;
+            height: 300px;
+            text-align: left;
+            margin: 20px;
+            border: solid 1px black;
+        }
+        p{
+            
+        }
+    
+    </style>
+
+</head>
+<html>
+    <body>
+            <table>
+                    {% for key, value in result.iteritems() %}
+                    
+                        <tr>
+                           <th>{{ key }}</th>
+                            <td>{{ value }}</td> 
+                        </tr>
+                       
+                       
+                    {% endfor %}
+            </table>
+    </body>
+</html>

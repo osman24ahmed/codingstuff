@@ -1,0 +1,17 @@
+1. cd desktop
+
+2. mkdir test
+
+3. touch index.html styles.css commands.txt
+
+4. cp index.html index_2.html
+
+5. rm styles.css
+
+6. cd, cd desktop, mkdir destination
+
+7. mv index_2 ../destinations
+
+8. cd cd desktop ls test destinations
+
+9. rm -rf destinations 

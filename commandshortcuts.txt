@@ -1,0 +1,17 @@
+Traversing a folder structure
+File systems are stored as a hierarchy, which means most directories (folders) have either a parent folder, or a child folder, or both!
+
+To traverse down into a child folder from the current directory, you would use    cd [folder_name] which translates to: "Change directory to [folder_name]" where [folder_name] is the name of the child folder.
+
+cd [folder name]
+MacBook-Pro:desktop jbenammi$ cd JonathanBenAmmi
+MacBook-Pro:JonathanBenAmmi jbenammi$
+
+
+
+To traverse up to a parent folder from where you currently are, it's  cd .. (Pronounced: "cd dot dot")
+
+cd ..
+MacBook-Pro:JonathanBenAmmi$ cd ..
+MacBook-Pro:desktop jbenammi$
+

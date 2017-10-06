@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Form text index</title>
+       
+    </head>
+    <body>
+        <h1>index page</h1>
+        <h2>create a user</h2>
+        <form action='/users' method='post'>
+            Name :<input type = 'text' name='name'>
+            Email <input type= 'text' name= 'email'>
+            <input type= 'submit' value='create user'>
+
+            <form method="post" action="/process">
+                <input type="hidden" name="action" value="register">
+                <input type="text" name="first_name">
+                <input type="text" name="last_name">
+                <input type="text" name="email">
+                <input type="password" name="password">
+                <input type="submit" value="Register">
+            </form>
+            <form method="post" action="/process">
+                <input type="hidden" name="action" value="login">
+                <input type="text" name="email">
+                <input type="password" name="password">
+                <input type="submit" value="Login">
+            </form>
+            
+
+        </form>
+    </body>
+</html>

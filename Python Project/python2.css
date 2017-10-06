@@ -1,0 +1,198 @@
+/*CSS reset settings here*/
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: 0px solid red;
+}
+#container{
+
+    width: 950px;
+    /* background: linear-gradient(to bottom, #cc6699 0%, #ffccff 100%); */
+    margin: 0px auto; 
+    /* padding: 0px 20px 20px 20px; */
+    /* vertical-align:top;  */
+}
+
+#big{
+    width: 950px;
+    background: linear-gradient(to bottom, #5D2A44 0%, #876E87 100%);
+
+    padding: 20px;
+    vertical-align:top;
+
+}
+#header{
+    height: 50px;
+    width: 990px;
+    background-color: #F8EDEA;
+    padding-top: 5px;
+
+}
+
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+Try it Yourself »
+
+
+#header h1, #header h2{
+    display: inline-block;
+    width: 49%;
+    font-style: oblique;
+}
+
+#header h1{
+
+    margin-left:10px;
+}
+
+#header h2 {
+    text-align: right;
+    font-size: larger;
+    font-style: normal;
+    margin-right: 5px;
+}
+h3{
+    color: white;
+    height: 30px;
+    background: linear-gradient(to bottom, #878593 0%, #b0b0b4 100%);
+    padding-left: 10px;
+    padding-top: 5px;
+    font-family: sans-serif; 
+    font-size: large;
+    
+    
+}
+
+
+
+.tech h3{
+  
+    margin-bottom:10px; 
+}
+
+#sidepic{
+    width:420px;;
+    height:228px;
+    display: inline-block;
+    margin-right: 20px;
+    border: 5px solid #C1B8B8;
+}
+
+#sidepic img{
+
+    height: 100%;
+    width: 100%;
+
+}
+
+#box1, #box2, #box3{
+    height: 610px;
+    width: 304px;
+    background: linear-gradient(to bottom, #fefdfe 0%, #dbcddb 100%);
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15px;
+    margin-top: 15px;
+
+}
+
+
+    /* .t{
+    position: absolute;
+    top: 200px;
+    } */
+
+    p{
+        font-size: small;
+        height: 150px;
+    }
+
+    #box3{
+        margin-right: 0px;
+    }
+
+    #rightside{
+        height: 239px;
+        width: 494px;
+        background: linear-gradient(to bottom, #F9E8F0 0%, #F4E4F4 100%);
+        display: inline-block; 
+
+        vertical-align:top;
+    }
+
+
+p{
+
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 5px;
+
+}
+
+.tech{
+    display: inline-block;
+}
+.tech img{
+
+padding-left: 10px;
+
+}
+button{
+    display: inline-block;
+    background: green;
+    color: white;
+    text: bold;
+    border-radius: 5px;
+    font-size: medium;
+    box-shadow: 5px 4px 4px rgba(58, 50, 52, 0.79)
+}
+
+.button{
+    text-align: center;
+}
+
+#footer{
+    height: 70px;
+    width: 990px;
+    background-color: #F8EDEA;
+}
+
+#footer p {
+
+    text-align: center;
+    font-size: normal;
+
+}
+
+#footer img{
+
+height: 15px;
+width: 15px;
+
+}

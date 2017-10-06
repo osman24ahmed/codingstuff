@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    border: solid red 1px;
+}
+
+#container{
+    background-color: #265175;
+    width: 970px;
+    margin: 0px auto;
+
+}
+
+img{
+    width: 400px;
+}
+
+#topright{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 165px;
+    margin-top: 20px;
+}
+#navbar{
+    background-color:#477eab;
+    width: 700px;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-around;
+
+}
+#navbar ul li{
+    display: inline;
+    color: white;
+    margin-left: 20px;
+    
+
+}
+#sidenav{
+    display: inline-block;
+    vertical-align: top;
+}
+#main{
+    display: inline-block;
+    width: 799px;
+}

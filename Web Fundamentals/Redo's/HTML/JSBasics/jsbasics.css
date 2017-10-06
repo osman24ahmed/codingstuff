@@ -1,0 +1,48 @@
+*{
+    margin:0px;
+
+}
+#container{
+    background-color: #15155A;
+    width: 970px;
+    padding: 20px;
+}
+header{
+    background-color: #AB232B;
+    height: 80px;
+    border-radius: 10px;
+    margin: 10px;
+}
+h1{
+    color: #AEAEE0;
+}
+#sidebar{
+    background-color: skyblue;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+#sidebar ul{
+    color: white;
+}
+#main{
+    background-color: black;
+    color: white;
+    display: inline-block;
+    width: 741px;
+    margin: 5px;
+    height: 400px;
+    margin-left: 10px;
+    border-radius: 10px;
+
+}
+#footer{
+    background-color: grey;
+    color: white;
+    height: 50px;
+    border-radius: 10px;
+    margin: 10px;
+}

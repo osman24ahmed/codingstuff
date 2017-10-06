@@ -1,0 +1,26 @@
+*{
+    margin: 0px;
+    border: solid red 1px;
+
+}
+
+img{
+    height: 100px;
+    width: 100px;
+}
+#header{
+    display: inline-block;
+}
+h1{
+    display: inline-block;
+}
+#container{
+    background-color: tan;
+    width: 690px;
+    margin:auto 0;
+    
+}
+.box{
+    margin: 20px;
+    padding: 5px;
+}

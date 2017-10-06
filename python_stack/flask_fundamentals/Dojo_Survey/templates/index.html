@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <title>Dojo Survey</title>
+        <style>
+            div{
+                width: 600px;
+                text-align: center;
+                outline: 1px black solid;
+                height: 400px;
+                margin-left: 300px;
+
+            }
+        
+            #info{
+
+            }
+            ul li{
+                text-align: center;
+                list-style: none;
+                margin: 50px;
+
+            }
+        </style>
+    </head>
+    <body>
+       
+    <div>
+        <form id='info' action="/result" method='POST'>
+        <ul>
+            <li>Your Name: <input type='text' name='name'></li> 
+            <li>Dojo Location:  
+                <select name="location">
+                <option value="la">LA</option>
+                <option value="seattle">Seattle</option>
+                <option value="san fran">San Fran</option>
+                <option value="tulsa">Tulsa</option>
+              </select></li>
+            <li>Favorite Language:  
+                <select name="language">
+                <option value="python">Python</option>
+                <option value="javascript">JavaScript</option>
+                <option value="Java">Java</option>
+              </select></li>
+           <li>Comment (optional):<br> <textarea name="comment"></textarea></li>
+           <li><input type='submit' value="Button"></li>
+        </ul>
+        </form>
+        </div>
+    </body>
+</html>

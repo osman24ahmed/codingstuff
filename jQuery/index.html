@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery demo!</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
+    </script>
+    <script type= "text/javascript">
+        $(document).ready(function(){
+            
+            $('#firststep').click(function(){
+
+                alert('step 1 done');
+
+            });
+            
+            $('#hideyo').click(function(){
+                $('#p1').hide();
+            });
+
+            $('#showme').click(function(){
+                $('#p1').show();
+            });
+
+            $('#doit').click(function(){
+                $('#p3').toggle();
+
+
+            })
+            $('#sl').click(function(){
+                $('#psl').slideUp();
+            });
+        
+            $('#sl2').click(function(){
+                $('#psl').slideDown();
+            });
+
+            $('#sl3').click(function(){
+                $('#psl2').slideToggle();
+            });
+
+            $('#psl3').hide();
+            $('#sl4').click(function(){
+                $('#psl3').fadeIn('slow');
+            });
+
+            $('#sl5').click(function(){
+                $('#psl4').fadeOut();
+
+            });
+
+            
+            $('#sl6').click(function(){
+                $('#psl5').addClass('cr');    
+
+            });
+
+            $('#sl7').click(function(){
+                $('#psl6').before('mask on');    
+
+            });
+
+            $('#sl8').click(function(){
+                $('#psl7').after('mask off');    
+
+            });
+
+            $('#sl9').click(function(){
+                $('#psl8').append('I am happy');    
+
+            });
+
+            $('#sl10').click(function(){
+                $('#psl9').html('<h2>WOW</h2>');    
+
+            });
+            $('#food2').click(function(){
+                $('#food').attr('width','200');    
+
+            }); 
+
+            $('#button3').click(function(){
+                $('#name').val('you did it!');    
+
+            });                                                                                                                                          
+            
+            $('#button4').click(function(){
+                $('#p2').text("It's gone wooo!!!");    
+
+            }); 
+            $("#btn1").click(function(){
+                $("btn1").data("greeting", "Hello World");
+            $("#btn2").click(function(){
+                alert($("btn2").data("greeting"));
+    });
+    
+            
+
+
+            
+        
+        
+        });
+   
+
+    
+    </script>
+<style>
+    .cr{
+        color: red;
+    }
+   
+</style>
+</head>
+
+<body>
+    <h4 id='firststep'>1.Click me</h4>
+    <p id='p1'>2.Hide Me Please</p>
+    <button id='hideyo'> Click to hide Paragraph</button>
+    <hr>
+    3.<p>Show Hidden paragraph</p>
+    <button id='showme'>Click to show hidden paragraph</button>
+    <hr>
+    <p>Toggle</p>
+    <p id='p3'>4.Do it man Do it man Do it man!!!</p>
+    <button id="doit"> Toggle it Dude!!</button>
+    <hr>
+    <p id='psl'>5.Sliddddeee Up</p>
+    <button id='sl'>I like to slide up</button>
+    <hr>
+    <p>6.Sliddddeee Down</p>
+    <button id='sl2'>I like to slide down</button>
+    <hr>
+    <p id='psl2'>7.Sliddddeee Togle</p>
+    <button id='sl3'>I like to Toggle</button>
+    <hr>
+    <p id='psl3'>8.Fade in</p>
+    <button id='sl4'>fade in</button>
+    <hr>
+    <p id='psl4'>9.Fade out</p>
+    <button id='sl5'>fade out</button>
+    <hr>
+    <p id='psl5'>10.Click button to add 'red' to this paragraph</p>
+    <button id='sl6'>Click Here!</button>
+    <hr>
+    <p id='psl6'>11.mask off</p>
+    <button id='sl7'>Click Here!</button>
+    <hr>
+    <p id='psl7'>12.mask on</p>
+    <button id='sl8'>Click Here!</button>
+    <hr>
+    <p id='psl8'>13.Append this paragraph please</p><h5>ksdjfk</h5><h6>jklasdj</h6>
+    <button id='sl9'>Click Here to append!</button>
+    <hr>
+    <p id='psl9'>14.let's see what happens</p>
+    <button id='sl10'>HTML this text!</button>
+    <hr>
+    15.<br>
+    <img id="food" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Wiktionary_small.svg/350px-Wiktionary_small.svg.png" alt="food">
+     <button id='food2'>ATTR!</button> 
+     <hr>
+     16.Name<input id="name" type="text"></p>
+     <button id='button3'>Hit It!</button>
+     <hr>
+     <p id='p2'>17.let's see what happens</p>
+     <button id='button4'>Replace it</button>
+     <hr>
+     <p id='p2'>18.let's see what happens</p>
+     <button id='button4'>Replace it</button>
+     <hr>
+     18.<button id="btn1">Attach data to div element</button><br>
+        <button id="btn2">Get data attached to div element</button>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+

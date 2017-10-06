@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ContactCard</title>
+    <link rel="stylesheet" type="text/css" href="users.css">
+    
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+</head>
+
+    <style>
+			/**{
+				outline: 1px dotted red;
+			}*/
+			div.container > div{
+				display: inline-block;
+				width: 48%;
+			}
+			.form{
+				vertical-align: top;
+			}
+			label{
+				display: block;
+			}
+			form, fieldset{
+				display: inline;
+			}
+			div.card{
+				border: 1px solid black;
+				text-align: center;
+				height: 100px;
+				width: 200px;
+				padding: 20px;
+				margin: 15px;
+			}
+			.description{
+				display: none;
+			}
+		</style>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('form').submit(function(){
+            // console.log("its working");
+            var first = $('#first_name').val();
+            var last = $('#last_name').val();
+            var desc = $('#description').val();
+            // console.log(first, last, desc);
+            $('#first_name').val("");
+            $('#last_name').val("");
+            $('#description').val("");
+            //we want to put the data into a div.
+            var html = "<div class='card'><div class='name'>";
+            html += first + " " + last;
+            html += "<p>Click here for description!</p>"
+            html += "</div><div class='description'>";
+            html += desc + "</div></div>";
+            console.log(html);
+            $('.contacts').append(html);
+            return false;
+        })
+        $(document).on('click', ".card", function(){
+            $(this).children().toggle();
+        })
+    });
+</script>
+
+	</head>
+	<body>
+		<div class="container">
+			<div class="form">
+				<form>
+					<fieldset>
+						<legend>Contact Form</legend>
+						<label>
+							First Name: <input type="text" name="first_name" id="first_name">
+						</label>
+						<label>
+							Last Name: <input type="text" name="last_name" id="last_name">
+						</label>
+						<label>
+							Description: <textarea id="description" name="description" placeholder="Enter Description"></textarea>
+						</label>
+						<input type="submit" value="Add User">
+					</fieldset>
+				</form>
+			</div>
+			<div class="contacts">
+
+				<div class="card">
+					<div class="name">
+						Michael Choi
+						<p>Click here for description!</p>
+					</div>
+					<div class="description">
+						Boss
+					</div>
+				</div>
+				<div class="card">
+					<div class="name">
+						John Supsupin
+						<p>Click here for description!</p>
+					</div>
+					<div class="description">
+						Boss
+					</div>
+				</div>
+				<div class="card">
+					<div class="name">
+						Michael Choi
+						<p>Click here for description!</p>
+					</div>
+					<div class="description">
+						Boss
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+	</body>
+</html>

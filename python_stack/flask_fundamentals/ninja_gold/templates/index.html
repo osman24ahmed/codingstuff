@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ninja Gold</title>
+    <style>
+        .places{
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin-left: 30px;
+            outline: solid 1 px black;
+            text-align: center;
+        }
+        .info{
+            overflow: scroll;
+            width: 700px;
+            height: 200px;
+            border: solid 1px black;
+        }
+        .red{
+            color: red;
+            margin: 10px;
+        }
+        .green{
+            color: green;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    Your Gold: {{session['gold']}}
+    <form action= '' method=''></form>
+    <div class="container">
+        <div class ='places'>
+            <h4>Farm</h4>
+            <p>(earns 10-20 golds)</p>
+            <form action="/process_money" method='post'>
+                <input type= 'hidden' name='building' value="farm" />
+                <input type="submit" value='Find Gold!'>
+            </form>
+        </div>
+        <div class ='places'>
+            <h4>Cave</h4>
+            <p>(earns 5-10 golds)</p>
+            <form action="/process_money" method='post'>
+                <input type= 'hidden' name='building' value="cave"/>
+                <input type="submit" value='Find Gold!'/>
+            </form>    
+        </div>
+        <div class ='places'>
+            <h4>House</h4>
+            <p>(earns 2-5 golds)</p>
+            <form action="/process_money" method='post'>
+                <input type= 'hidden' name='building' value="house"/>
+                <input type="submit" value='Find Gold!'>
+            </form>
+        </div>
+        <div class ='places'>
+            <h4>Casino</h4>
+            <p>(earns/takes 0-50 golds)</p>
+            <form action="/process_money" method='post'>
+                <input type= 'hidden' name='building' value="casino"/>
+                <input type="submit" value='Find Gold!'>
+            </form>
+        </div>
+        <div class ='activities'>
+            
+          <p>Activities:</p> 
+          <div class='info'>
+               
+              
+              {% for activity in session['activities'] %}
+                {% if 'lost' in activity %}
+                <p class='red'>{{activity}}</p>
+                {% else %}
+                <p class='green'>{{activity}}</p>
+                {% endif %}
+              {% endfor %}
+
+        </div>
+           
+        
+       <a href='/reset'>Reset</a>
+        </div>
+    </div>
+</body>
+</html>

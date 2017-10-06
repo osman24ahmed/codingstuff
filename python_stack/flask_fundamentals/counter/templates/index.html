@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <title>Counter</title>
+    <style>
+        body{text-align: center;
+                }
+    </style>
+</head>
+<body>
+    <h1>Counter</h1>
+    <h2> {{session['counter']}} times</h2>
+    <form method="GET" action='/add'>
+    <button type='submit' >Add 2</button><br>
+    </form>
+    <form method='GET' action='/reset'>
+    <button type='submit'>Reset</button>
+    </form>
+    
+</body>
+</html>
